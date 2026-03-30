@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 30% 4%;
+    --foreground: 220 20% 90%;
+    --card: 240 30% 6%;
+    --card-foreground: 220 20% 90%;
+    --popover: 240 30% 6%;
+    --popover-foreground: 220 20% 90%;
+    --primary: 271 91% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 30% 10%;
+    --secondary-foreground: 220 20% 90%;
+    --muted: 240 20% 12%;
+    --muted-foreground: 220 15% 60%;
+    --accent: 30 50% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 20% 15%;
+    --input: 240 20% 15%;
+    --ring: 271 91% 50%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cosmos text-silver-light font-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* 噪点纹理覆盖层 */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* 星空背景 */
+.starfield {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: var(--min-opacity); }
+  50% { opacity: var(--max-opacity); }
+}
+
+/* 卡牌 3D 翻转 */
+.tarot-card {
+  perspective: 1000px;
+}
+
+.tarot-card-inner {
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.tarot-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.tarot-card-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.tarot-card-back {
+  transform: rotateY(180deg);
+}
+
+/* 卡牌发光效果 */
+.card-glow {
+  box-shadow:
+    0 0 15px rgba(109, 40, 217, 0.3),
+    0 0 30px rgba(109, 40, 217, 0.1),
+    inset 0 0 15px rgba(109, 40, 217, 0.05);
+}
+
+.card-glow-gold {
+  box-shadow:
+    0 0 15px rgba(212, 165, 116, 0.3),
+    0 0 30px rgba(212, 165, 116, 0.1),
+    inset 0 0 15px rgba(212, 165, 116, 0.05);
+}
+
+/* 渐变文字 */
+.text-gradient {
+  background: linear-gradient(135deg, #a855f7 0%, #d4a574 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #d4a574 0%, #e8c9a0 50%, #d4a574 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1b4b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #312e81;
+}
+
+::selection {
+  background: rgba(109, 40, 217, 0.3);
+  color: #e2e8f0;
+}
+
+/* 页面过渡 */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

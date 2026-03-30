@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 480" width="300" height="480">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f0d2e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574"/>
+      <stop offset="50%" style="stop-color:#f4d5a3"/>
+      <stop offset="100%" style="stop-color:#b8956a"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="480" fill="url(#bg6)"/>
+  <rect x="5" y="5" width="290" height="470" fill="none" stroke="url(#goldGrad6)" stroke-width="3" rx="8"/>
+  <rect x="12" y="12" width="276" height="456" fill="none" stroke="url(#goldGrad6)" stroke-width="1" rx="5"/>
+  <g fill="#d4a574" opacity="0.6">
+    <circle cx="60" cy="70" r="2"/><circle cx="240" cy="70" r="2"/>
+    <circle cx="55" cy="430" r="1.5"/><circle cx="245" cy="430" r="1.5"/>
+  </g>
+  <text x="150" y="35" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="24" font-weight="bold">06</text>
+  <text x="150" y="95" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="28" font-weight="bold">恋人</text>
+  <text x="150" y="385" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="22">THE LOVERS</text>
+  <text x="150" y="410" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="11" opacity="0.7">MAJOR ARCANA</text>
+  <g transform="translate(150, 250)">
+    <path d="M-40,-10 A40,40 0 0,1 40,-10 A40,40 0 0,1 -40,-10" fill="none" stroke="#d4a574" stroke-width="2"/>
+    <path d="M-30,-10 A30,30 0 0,1 30,-10 A30,30 0 0,1 -30,-10" fill="none" stroke="#d4a574" stroke-width="1"/>
+    <path d="M-40,-10 L-40,-50" stroke="#d4a574" stroke-width="1"/>
+    <path d="M40,-10 L40,-50" stroke="#d4a574" stroke-width="1"/>
+    <line x1="-40" y1="-35" x2="40" y2="-35" stroke="#d4a574" stroke-width="1"/>
+    <text x="0" y="-12" text-anchor="middle" fill="#d4a574" font-size="36" font-weight="bold">♊</text>
+    <path d="M0,20 L0,40" stroke="#d4a574" stroke-width="1.5"/>
+    <circle cx="0" cy="48" r="5" fill="none" stroke="#d4a574" stroke-width="1.5"/>
+  </g>
+  <path d="M150,145 L150,185" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+  <g transform="translate(150, 370)">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#d4a574" stroke-width="1"/>
+  </g>
+</svg>

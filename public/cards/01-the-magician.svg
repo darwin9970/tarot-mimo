@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 480" width="300" height="480">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f0d2e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574"/>
+      <stop offset="50%" style="stop-color:#f4d5a3"/>
+      <stop offset="100%" style="stop-color:#b8956a"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="480" fill="url(#bg1)"/>
+  <rect x="5" y="5" width="290" height="470" fill="none" stroke="url(#goldGrad1)" stroke-width="3" rx="8"/>
+  <rect x="12" y="12" width="276" height="456" fill="none" stroke="url(#goldGrad1)" stroke-width="1" rx="5"/>
+  <g fill="#d4a574" opacity="0.6">
+    <circle cx="60" cy="70" r="2"/><circle cx="240" cy="70" r="2"/>
+    <circle cx="50" cy="420" r="1.5"/><circle cx="250" cy="420" r="1.5"/>
+    <circle cx="75" cy="200" r="1"/><circle cx="225" cy="200" r="1"/>
+  </g>
+  <text x="150" y="35" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="24" font-weight="bold">01</text>
+  <text x="150" y="95" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="28" font-weight="bold">魔术师</text>
+  <text x="150" y="385" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="22">THE MAGICIAN</text>
+  <text x="150" y="410" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="11" opacity="0.7">MAJOR ARCANA</text>
+  <g transform="translate(150, 250)">
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#d4a574" stroke-width="1" opacity="0.3"/>
+    <ellipse cx="0" cy="0" rx="30" ry="50" fill="none" stroke="#d4a574" stroke-width="1.5"/>
+    <circle cx="0" cy="-50" r="8" fill="#d4a574"/>
+    <line x1="0" y1="-42" x2="0" y2="-25" stroke="#d4a574" stroke-width="2"/>
+    <circle cx="0" cy="-25" r="6" fill="none" stroke="#d4a574" stroke-width="1.5"/>
+    <line x1="-20" y1="15" x2="20" y2="15" stroke="#d4a574" stroke-width="1.5"/>
+    <circle cx="-25" cy="15" r="4" fill="none" stroke="#d4a574" stroke-width="1.5"/>
+    <circle cx="25" cy="15" r="4" fill="none" stroke="#d4a574" stroke-width="1.5"/>
+    <circle cx="0" cy="50" r="8" fill="#d4a574" opacity="0.6"/>
+    <text x="0" y="5" text-anchor="middle" fill="#d4a574" font-size="36" font-weight="bold">☿</text>
+  </g>
+  <path d="M150,130 L150,170" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+  <path d="M110,200 L190,200" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+  <path d="M110,300 L190,300" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+</svg>

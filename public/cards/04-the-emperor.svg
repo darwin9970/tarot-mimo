@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 480" width="300" height="480">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f0d2e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574"/>
+      <stop offset="50%" style="stop-color:#f4d5a3"/>
+      <stop offset="100%" style="stop-color:#b8956a"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="480" fill="url(#bg4)"/>
+  <rect x="5" y="5" width="290" height="470" fill="none" stroke="url(#goldGrad4)" stroke-width="3" rx="8"/>
+  <rect x="12" y="12" width="276" height="456" fill="none" stroke="url(#goldGrad4)" stroke-width="1" rx="5"/>
+  <g fill="#d4a574" opacity="0.6">
+    <circle cx="55" cy="75" r="1.5"/><circle cx="245" cy="75" r="1.5"/>
+    <circle cx="50" cy="430" r="1.5"/><circle cx="250" cy="430" r="1.5"/>
+  </g>
+  <text x="150" y="35" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="24" font-weight="bold">04</text>
+  <text x="150" y="95" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="28" font-weight="bold">皇帝</text>
+  <text x="150" y="385" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="22">THE EMPEROR</text>
+  <text x="150" y="410" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="11" opacity="0.7">MAJOR ARCANA</text>
+  <g transform="translate(150, 250)">
+    <rect x="-35" y="-45" width="70" height="90" fill="none" stroke="#d4a574" stroke-width="2" rx="3"/>
+    <rect x="-25" y="-35" width="50" height="70" fill="none" stroke="#d4a574" stroke-width="1"/>
+    <path d="M-35,-45 L0,-55 L35,-45" fill="none" stroke="#d4a574" stroke-width="1.5"/>
+    <text x="0" y="-15" text-anchor="middle" fill="#d4a574" font-size="36" font-weight="bold">♈</text>
+    <rect x="-30" y="25" width="60" height="3" fill="#d4a574" opacity="0.6"/>
+    <rect x="-30" y="32" width="60" height="3" fill="#d4a574" opacity="0.4"/>
+    <circle cx="0" cy="50" r="6" fill="none" stroke="#d4a574" stroke-width="1.5"/>
+    <line x1="0" y1="56" x2="0" y2="62" stroke="#d4a574" stroke-width="1.5"/>
+  </g>
+  <path d="M150,130 L150,165" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+  <path d="M120,145 L180,145" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+  <path d="M90,355 L210,355" stroke="#d4a574" stroke-width="0.5" opacity="0.3"/>
+</svg>
